@@ -273,4 +273,4 @@ The project follows the coding standards defined in `.editorconfig`:
 ## License
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This project is licensed under the MIT License, which allows you to freely use, modify, and distribute the code. See the [`LICENSE`](LICENSE) file for full details.
+This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for details.
