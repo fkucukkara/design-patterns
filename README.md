@@ -47,7 +47,7 @@ Each pattern implementation includes:
 
 ### Running the Application
 ```bash
-git clone <repository-url>
+git clone https://github.com/fkucukkara/design-patterns.git
 cd design-patterns
 dotnet run --project design-patterns
 ```
@@ -257,21 +257,6 @@ The project follows the coding standards defined in `.editorconfig`:
 - camelCase for private fields
 - Comprehensive XML documentation
 
-## 🤝 Contributing
-
-This is an educational project. Contributions are welcome for:
-- **Additional patterns** from the remaining GoF patterns
-- **Improved examples** with better real-world scenarios
-- **Documentation enhancements** for clarity
-- **Code optimizations** following C# best practices
-- **Bug fixes** and improvements
-
-### Adding New Patterns
-1. Create a new class implementing `IPatternDemo`
-2. Place it in the appropriate category folder
-3. Follow the established documentation and naming conventions
-4. Include comprehensive examples with real-world scenarios
-
 ## 📖 Additional Resources
 
 ### Design Patterns References
@@ -285,16 +270,7 @@ This is an educational project. Contributions are welcome for:
 - [.NET 9.0 Documentation](https://docs.microsoft.com/en-us/dotnet/)
 - [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
-## 📄 License
+## License
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This project is provided for educational purposes. Feel free to use, modify, and distribute for learning and teaching.
-
-## 🏷️ Version
-
-**Current Version:** 1.0.0  
-**Target Framework:** .NET 9.0  
-**Language Version:** C# 13  
-
----
-
-*Built with ❤️ for the developer community to learn design patterns through practical, real-world examples.*
+This project is licensed under the MIT License, which allows you to freely use, modify, and distribute the code. See the [`LICENSE`](LICENSE) file for full details.
