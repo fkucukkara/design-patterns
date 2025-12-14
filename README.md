@@ -1,6 +1,6 @@
 # Design Patterns Educational Demo
 
-A professional implementation of the 23 classic Gang of Four (GoF) design patterns in **C# 13** with **.NET 9.0**. This project serves as a practical reference for mid to senior-level software engineers.
+A professional implementation of the 23 classic Gang of Four (GoF) design patterns in **C# 14** with **.NET 10.0**. This project serves as a practical reference for mid to senior-level software engineers.
 
 ## Overview
 
@@ -42,7 +42,7 @@ Each pattern implementation includes:
 ## Getting Started
 
 ### Prerequisites
-- .NET 9.0 SDK or later
+- .NET 10.0 SDK or later
 - Any C# IDE (Visual Studio, VS Code, Rider)
 
 ### Running the Application
@@ -189,7 +189,7 @@ dotnet run --project design-patterns
 
 ## 🛠️ Technology Features
 
-### Modern C# 13 Features Used
+### Modern C# 14 Features Used
 - **File-scoped namespaces** for cleaner code organization
 - **Nullable reference types** for better null safety
 - **Pattern matching** with switch expressions
@@ -197,7 +197,7 @@ dotnet run --project design-patterns
 - **Record types** for immutable data models
 - **Global using statements** for common imports
 
-### .NET 9.0 Features
+### .NET 10.0 Features
 - **Latest performance improvements**
 - **Enhanced nullable annotations**
 - **Improved JSON serialization**
@@ -267,7 +267,7 @@ The project follows the coding standards defined in `.editorconfig`:
 
 ### C# and .NET Resources
 - [C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- [.NET 9.0 Documentation](https://docs.microsoft.com/en-us/dotnet/)
+- [.NET 10.0 Documentation](https://docs.microsoft.com/en-us/dotnet/)
 - [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 
 ## License
