@@ -25,20 +25,6 @@ design-patterns/
 └── Program.cs                  # Application entry point
 ```
 
-## Usage
-
-The application provides an interactive menu to explore patterns by category:
-
-1. **Select a category** (Creational, Structural, or Behavioral)
-2. **Choose a specific pattern** to see its implementation
-3. **View the demonstration** with clear, focused examples
-
-Each pattern implementation includes:
-- Core pattern structure
-- Simple, practical example
-- Clean, readable code
-- Professional implementation approach
-
 ## Getting Started
 
 ### Prerequisites
@@ -49,57 +35,17 @@ Each pattern implementation includes:
 ```bash
 git clone https://github.com/fkucukkara/design-patterns.git
 cd design-patterns
+dotnet build
 dotnet run --project design-patterns
 ```
 
+The application provides an interactive menu to explore patterns by category:
+
+1. **Select a category** (Creational, Structural, or Behavioral)
+2. **Choose a specific pattern** to see its implementation
+3. **View the demonstration** with clear, focused examples
+
 ## Implemented Patterns
-
-### Creational Patterns (5/5)
-- **Factory Method** - Payment processor creation
-- **Abstract Factory** - Cross-platform UI components  
-- **Builder** - Database configuration builder
-- **Prototype** - Document template cloning
-- **Singleton** - Configuration manager
-
-### Structural Patterns (7/7)
-- **Adapter** - Legacy system integration
-- **Bridge** - Device abstraction
-- **Composite** - File system hierarchy
-- **Decorator** - Feature enhancement
-- **Facade** - System simplification
-- **Flyweight** - Memory optimization
-- **Proxy** - Lazy loading
-
-### Behavioral Patterns (11/11)
-- **Chain of Responsibility** - Request handling
-- **Command** - Action encapsulation
-- **Iterator** - Collection traversal
-- **Mediator** - Object communication
-- **Memento** - State preservation
-- **Observer** - Event notification
-- **State** - State-dependent behavior
-- **Strategy** - Algorithm selection
-- **Template Method** - Algorithm skeleton
-- **Visitor** - Operation separation
-   cd design-patterns
-   ```
-
-2. **Build the project:**
-   ```bash
-   dotnet build
-   ```
-
-3. **Run the application:**
-   ```bash
-   dotnet run --project design-patterns
-   ```
-
-4. **Navigate the interactive menu** to explore different patterns:
-   - Choose pattern categories (Creational, Structural, Behavioral)
-   - Select specific patterns to see live demonstrations
-   - Follow along with the console output to understand each pattern
-
-## 📚 Implemented Patterns
 
 ### Creational Patterns (5/5) ✅
 - [x] **Factory Method** - Payment processor creation system

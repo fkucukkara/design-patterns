@@ -22,26 +22,26 @@ public class SingletonPatternDemo : IPatternDemo
 
         DemonstrateBasicSingleton();
         Console.WriteLine();
-        
+
         DemonstrateThreadSafeSingleton();
         Console.WriteLine();
-        
+
         DemonstrateLazySingleton();
         Console.WriteLine();
-        
+
         DemonstrateConfigurationManager();
     }
 
     private static void DemonstrateBasicSingleton()
     {
         Console.WriteLine("🏛️ Basic Singleton (Not Thread-Safe):");
-        
+
         var logger1 = BasicLogger.Instance;
         var logger2 = BasicLogger.Instance;
-        
+
         logger1.Log("First message from logger1");
         logger2.Log("Second message from logger2");
-        
+
         Console.WriteLine($"  Same instance? {ReferenceEquals(logger1, logger2)}");
         Console.WriteLine($"  Instance hash codes: {logger1.GetHashCode()} == {logger2.GetHashCode()}");
     }
@@ -49,13 +49,13 @@ public class SingletonPatternDemo : IPatternDemo
     private static void DemonstrateThreadSafeSingleton()
     {
         Console.WriteLine("🔒 Thread-Safe Singleton:");
-        
+
         var database1 = ThreadSafeDatabase.Instance;
         var database2 = ThreadSafeDatabase.Instance;
-        
+
         database1.ExecuteQuery("SELECT * FROM Users");
         database2.ExecuteQuery("UPDATE Users SET Status = 'Active'");
-        
+
         Console.WriteLine($"  Same instance? {ReferenceEquals(database1, database2)}");
         Console.WriteLine($"  Connection count: {database1.ConnectionCount}");
     }
@@ -63,13 +63,13 @@ public class SingletonPatternDemo : IPatternDemo
     private static void DemonstrateLazySingleton()
     {
         Console.WriteLine("⚡ Lazy Singleton (Modern C# Approach):");
-        
+
         var cache1 = ModernCache.Instance;
         var cache2 = ModernCache.Instance;
-        
+
         cache1.Set("user:123", "John Doe");
         var user = cache2.Get("user:123");
-        
+
         Console.WriteLine($"  Retrieved from cache: {user}");
         Console.WriteLine($"  Same instance? {ReferenceEquals(cache1, cache2)}");
         Console.WriteLine($"  Cache size: {cache1.Count}");
@@ -78,17 +78,17 @@ public class SingletonPatternDemo : IPatternDemo
     private static void DemonstrateConfigurationManager()
     {
         Console.WriteLine("⚙️ Practical Example - Configuration Manager:");
-        
+
         var config = ConfigurationManager.Instance;
-        
+
         // Set some configuration values
         config.SetValue("DatabaseConnectionString", "Server=localhost;Database=MyApp;");
         config.SetValue("ApiTimeout", "30");
         config.SetValue("EnableLogging", "true");
-        
+
         // Retrieve configuration from another reference
         var anotherConfigRef = ConfigurationManager.Instance;
-        
+
         Console.WriteLine($"  Database Connection: {anotherConfigRef.GetValue("DatabaseConnectionString")}");
         Console.WriteLine($"  API Timeout: {anotherConfigRef.GetValue("ApiTimeout")} seconds");
         Console.WriteLine($"  Logging Enabled: {anotherConfigRef.GetValue("EnableLogging")}");
@@ -133,7 +133,7 @@ public class BasicLogger
 public class ThreadSafeDatabase
 {
     private static ThreadSafeDatabase? _instance;
-    private static readonly object _lock = new();
+    private static readonly Lock _lock = new();
     private int _connectionCount;
 
     private ThreadSafeDatabase()
