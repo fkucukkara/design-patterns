@@ -21,7 +21,7 @@ design-patterns/
 ├── Patterns/
 │   ├── Creational/             # 5 creational patterns
 │   ├── Structural/             # 7 structural patterns
-│   └── Behavioral/             # 11 behavioral patterns
+│   └── Behavioral/             # 12 behavioral patterns
 └── Program.cs                  # Application entry point
 ```
 
@@ -63,7 +63,7 @@ The application provides an interactive menu to explore patterns by category:
 - [x] **Flyweight** - Tree forest memory optimization
 - [x] **Proxy** - Image lazy loading system
 
-### Behavioral Patterns (11/11) ✅
+### Behavioral Patterns (12/12) ✅
 - [x] **Chain of Responsibility** - Support ticket handling system
 - [x] **Command** - Smart home automation with undo functionality
 - [x] **Iterator** - Book collection traversal system
@@ -74,6 +74,7 @@ The application provides an interactive menu to explore patterns by category:
 - [x] **Strategy** - Shipping cost calculation and payment processing
 - [x] **Template Method** - Beverage preparation algorithm
 - [x] **Visitor** - Shape calculation operations
+- [x] **Pipeline** - Order processing, text transformation, and HTTP middleware simulation
 
 ## 💡 Pattern Examples Overview
 
@@ -132,6 +133,13 @@ The application provides an interactive menu to explore patterns by category:
 - Encapsulates different algorithms for shipping cost calculation
 - Allows runtime algorithm selection
 - Shows multiple strategy examples (shipping, payment, sorting)
+
+### Pipeline Pattern
+**Scenario:** Order processing, text transformation, and HTTP middleware chain
+- Composes independent processing steps into a linear, reusable workflow
+- Demonstrates an order context flowing through parse → validate → discount → tax → receipt stages
+- Shows text transformation with trim, normalize, sanitize, truncate, and capitalize steps
+- Simulates ASP.NET-style middleware (logging → auth → rate-limiting → handler) with early-abort support
 
 ## 🛠️ Technology Features
 
